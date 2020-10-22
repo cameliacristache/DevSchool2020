@@ -1,0 +1,44 @@
+html,
+body,
+section,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "Roboto", sans-serif;
+  vertical-align: baseline;
+}
+
+nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cover {
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
+  background-image: linear-gradient(#ff6200, #ff6200);
+  background-blend-mode: saturation;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: white;
+  font-size: 80px;
+  text-align: center;
+}
