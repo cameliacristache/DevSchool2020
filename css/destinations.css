@@ -58,50 +58,6 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
-section {
-  margin-bottom: var(--main-spacer);
-}
-
-section h2 {
-  color: var(--main-color);
-  text-align: center;
-  font-weight: normal;
-  margin-bottom: var(--secondary-spacer);
-}
-
-section > p {
-  text-align: center;
-}
-
-article {
-  display: flex;
-  background-color: #f0f0f0;
-}
-
-article:nth-of-type(2n) {
-  flex-direction: row-reverse;
-}
-
-article > picture {
-  display: flex;
-  flex: 0 1 55vw;
-}
-
-article > div {
-  flex: 1 0 auto;
-  padding: 10vw;
-}
-
-picture img {
-  object-fit: cover;
-  width: 100%;
-}
-
-article h3 {
-  margin-bottom: var(--secondary-spacer);
-  font-size: 24px;
-}
-
 footer {
   padding: var(--secondary-spacer);
   text-align: center;
