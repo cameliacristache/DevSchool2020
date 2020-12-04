@@ -17,21 +17,6 @@ html {
   color: #333;
 }
 
-header {
-  height: 50vh;
-  background-color: var(--main-color);
-  color: white;
-  position: relative;
-  margin-bottom: var(--main-spacer);
-}
-
-h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 section {
   margin-bottom: var(--main-spacer);
 }
