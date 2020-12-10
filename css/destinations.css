@@ -8,7 +8,7 @@
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   vertical-align: baseline;
   box-sizing: border-box;
 }
@@ -63,54 +63,4 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-main section {
-  width: 80%;
-}
-
-section h2 {
-  color: var(--main-color);
-  text-align: center;
-  font-weight: normal;
-  margin-bottom: var(--secondary-spacer);
-}
-
-article {
-  display: flex;
-  margin-bottom: var(--secondary-spacer);
-}
-
-article div {
-  flex: 1;
-}
-
-article img {
-  margin-right: var(--secondary-spacer);
-}
-
-article h3 {
-  color: var(--main-color);
-  margin-bottom: var(--secondary-spacer);
-}
-
-article p {
-  margin-bottom: var(--secondary-spacer);
-}
-
-article a {
-  text-decoration: none;
-}
-
-article a::before {
-  content: "\3E";
-  padding-right: 5px;
-}
-
-footer {
-  padding: var(--secondary-spacer);
-  text-align: center;
-  font-size: 14px;
-  color: white;
-  background-color: var(--main-color);
 }

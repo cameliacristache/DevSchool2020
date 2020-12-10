@@ -10,86 +10,14 @@
     />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html">home</a>
-          </li>
-          <li>
-            <a href="destinations.html">destinations</a>
-          </li>
-          <li>
-            <a href="#">language</a>
-          </li>
-        </ul>
-      </nav>
-      <h1>Travel website</h1>
-    </header>
+    <app-header></app-header>
     <main>
-      <section>
-        <h2>Destinastions</h2>
-        <article>
-          <img alt="article image" src="https://picsum.photos/300/200?a" />
-          <div>
-            <h3>Destination 1 title</h3>
-            <p>Destination 1 description</p>
-            <a href="destination.html">know more</a>
-          </div>
-        </article>
-        <article>
-          <img alt="article image" src="https://picsum.photos/300/200?b" />
-          <div>
-            <h3>Destination 2 title</h3>
-            <p>Destination 2 description</p>
-            <a href="destination.html">know more</a>
-          </div>
-        </article>
-        <article>
-          <img alt="article image" src="https://picsum.photos/300/200?c" />
-          <div>
-            <h3>Destination 3 title</h3>
-            <p>Destination 3 description</p>
-            <a href="destination.html">know more</a>
-          </div>
-        </article>
-        <article>
-          <img alt="article image" src="https://picsum.photos/300/200?d" />
-          <div>
-            <h3>Destination 4 title</h3>
-            <p>Destination 4 description</p>
-            <a href="destination.html">know more</a>
-          </div>
-        </article>
-        <article>
-          <img alt="article image" src="https://picsum.photos/300/200?e" />
-          <div>
-            <h3>Destination 5 title</h3>
-            <p>Destination 5 description</p>
-            <a href="destination.html">know more</a>
-          </div>
-        </article>
-        <article>
-          <img alt="article image" src="https://picsum.photos/300/200?f" />
-          <div>
-            <h3>Destination 6 title</h3>
-            <p>Destination 6 description</p>
-            <a href="destination.html">know more</a>
-          </div>
-        </article>
-        <article>
-          <img alt="article image" src="https://picsum.photos/300/200?g" />
-          <div>
-            <h3>Destination 7 title</h3>
-            <p>Destination 7 description</p>
-            <a href="destination.html">know more</a>
-          </div>
-        </article>
-      </section>
+      <article-destinations></article-destinations>
     </main>
-    <footer>
-      <p>2020 Travel website - All rights reserved</p>
-      <p>by Awesome DevSchoolers</p>
-    </footer>
+    <app-footer></app-footer>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" src="src/app-header.js"></script>
+    <script type="module" src="src/app-footer.js"></script>
+    <script type="module" src="src/article-destinations.js"></script>
   </body>
 </html>

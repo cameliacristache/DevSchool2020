@@ -17,7 +17,8 @@
     "url": "https://github.com/cameliacristache/DevSchool2020/issues"
   },
   "homepage": "https://github.com/cameliacristache/DevSchool2020#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "live-server": "^1.2.1"
   }
 }
