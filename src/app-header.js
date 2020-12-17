@@ -1,9 +1,5 @@
-import {
-  LitElement,
-  html,
-  css,
-} from 'https://unpkg.com/lit-element@2.4.0/lit-element.js?module';
-
+import { LitElement, html, css } from 'lit-element';
+import axios from 'axios';
 class AppHeader extends LitElement {
   static get styles() {
     return css`
@@ -98,7 +94,6 @@ class AppHeader extends LitElement {
   }
 
   async getPosts2() {
-    const axios = window.axios;
     try {
       const response = await axios.get(
         'https://jsonplaceholder.typicode.com/anaaremere'
@@ -112,12 +107,10 @@ class AppHeader extends LitElement {
   }
 
   getPosts() {
-    const axios = window.axios;
-
-    // axios
-    //   .get('https://jsonplaceholder.typicode.com/posts')
-    //   .then((response) => console.log(response))
-    //   .catch((error) => console.log(error));
+    axios
+      .get('https://jsonplaceholder.typicode.com/posts')
+      .then((response) => console.log(response))
+      .catch((error) => console.log(error));
 
     // axios
     //   .post(
