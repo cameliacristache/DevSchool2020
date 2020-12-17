@@ -1,8 +1,14 @@
 import { LitElement, html, css } from 'lit-element';
 import axios from 'axios';
+
+import { request } from './lib.js';
 class AppHeader extends LitElement {
   static get styles() {
     return css`
+      :root {
+        --main-color: #333;
+      }
+
       header {
         height: 50vh;
         background-color: var(--main-color);
@@ -59,6 +65,9 @@ class AppHeader extends LitElement {
           <li>
             <a href="#">language</a>
           </li>
+          <li>
+            <slot></slot>
+          </li>
         </ul>
       </nav>
       <h1>Travel website</h1>
@@ -95,12 +104,15 @@ class AppHeader extends LitElement {
 
   async getPosts2() {
     try {
-      const response = await axios.get(
-        'https://jsonplaceholder.typicode.com/anaaremere'
+      const response = await request(
+        'https://jsonplaceholder.typicode.com/anaaremere',
+        {
+          method: 'POST',
+        }
       );
       console.log(response);
     } catch (error) {
-      console.log(error);
+      console.log('miiiiu', error);
     }
 
     console.log('la sfarsitul metodei');
