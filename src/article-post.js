@@ -37,7 +37,6 @@ class ArticlePost extends LitElement {
       }
 
       :host(:nth-of-type(2n)) article {
-        background-color: red;
         flex-direction: row-reverse;
       }
     `;
